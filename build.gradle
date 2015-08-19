@@ -1,0 +1,14 @@
+allprojects {
+  repositories {
+    jcenter()
+  }
+}
+
+ext.libraries = [
+  autoValue          : 'com.google.auto.value:auto-value:1.1',
+  jackson            : 'com.fasterxml.jackson.core:jackson-databind:2.6.1',
+  intellijAnnotations: 'com.intellij:annotations:12.0',
+
+  junit              : 'junit:junit:4.12',
+  assertJ            : 'org.assertj:assertj-core:1.7.1'
+]
