@@ -1,0 +1,12 @@
+# Disabling sudo moves build to the Container Based Infrastructure on Travis CI
+sudo: false
+
+language: java
+
+jdk: oraclejdk8
+
+script:
+  - sh ci.sh
+
+notifications:
+  email: false

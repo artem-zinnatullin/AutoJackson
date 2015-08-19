@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+test {
+  testLogging {
+    events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+  }
+}
+
+// See build.gradle in the root directory
+dependencies {
+  compile libraries.intellijAnnotations
+  compile libraries.autoValue
+  compile libraries.jackson
+
+  testCompile libraries.junit
+  testCompile libraries.assertJ
+}
