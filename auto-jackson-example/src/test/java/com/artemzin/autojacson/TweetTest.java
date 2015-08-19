@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static net.javacrumbs.jsonunit.fluent.JsonFluentAssert.assertThatJson;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TweetTest {
@@ -20,7 +21,8 @@ public class TweetTest {
       .content("Immutability for everybody!")
       .build();
 
-    assertThat(objectMapper.writeValueAsString(tweet)).isEqualTo("{\"author\":\"@artem_zin\",\"content\":\"Immutability for everybody!\"}");
+    assertThatJson(objectMapper.writeValueAsString(tweet))
+      .isEqualTo("{\"author\":\"@artem_zin\",\"content\":\"Immutability for everybody!\"}");
   }
 
   @Test

@@ -52,7 +52,7 @@ public void shouldSerializeToJson() throws JsonProcessingException {
     .content("Immutability for everybody!")
     .build();
 
-  assertThat(objectMapper.writeValueAsString(tweet))
+  assertThatJson(objectMapper.writeValueAsString(tweet))
     .isEqualTo("{\"author\":\"@artem_zin\",\"content\":\"Immutability for everybody!\"}");
 }
 
