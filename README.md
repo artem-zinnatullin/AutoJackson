@@ -1,7 +1,16 @@
 # AutoJackson
-Simple example of class annotated with [AutoValue](https://github.com/google/auto/tree/master/value) and [AutoParcel](https://github.com/frankiesardo/auto-parcel) + [Jackson](https://github.com/FasterXML/jackson).
 
-It is **serializable** to JSON and **deserializable** from JSON.
+###Why AutoValue is awesome?
+Just read [Google's explanation!](https://github.com/google/auto/tree/master/value)
+
+TLTR: It gives you immutability (thread safety!), `equals()`, `hashCode()` and `toString()` for free!
+
+------
+###Okay, I'm in, show me the code!
+
+Simple example of class annotated with [AutoValue](https://github.com/google/auto/tree/master/value) or [AutoParcel](https://github.com/frankiesardo/auto-parcel) + [Jackson](https://github.com/FasterXML/jackson).
+
+It is **serializable** to JSON and **deserializable** from JSON, it's immutable and it has correctly implemented `equals()`, `hashCode()` and `toString()`! Life is better with [AutoValue](https://github.com/google/auto/tree/master/value)!
 
 ```java
 // Just use @AutoParcel annotations if you need AutoParcel
