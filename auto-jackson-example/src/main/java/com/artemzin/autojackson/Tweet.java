@@ -2,17 +2,13 @@ package com.artemzin.autojackson;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.google.auto.value.AutoValue;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static com.artemzin.autojackson.Tweet.builder;
-
 @AutoValue
-@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonDeserialize(builder = AutoValue_Tweet.Builder.class)
 public abstract class Tweet {
 
