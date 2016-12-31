@@ -16,6 +16,7 @@ gen/
 out/
 target/
 auto-jackson-example/src/main/generated/
+auto-jackson-example/generated_src/
 
 # Local configuration file (sdk path, etc)
 local.properties
