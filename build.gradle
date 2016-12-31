@@ -3,6 +3,7 @@ allprojects {
     jcenter()
   }
 }
+apply plugin: 'idea'
 
 ext.libraries = [
   autoValue          : 'com.google.auto.value:auto-value:1.2',

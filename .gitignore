@@ -27,6 +27,8 @@ local.properties
 # Idea IDE files
 *.idea/
 *.iml
+AutoJackson.ipr
+AutoJackson.iws
 
 *.DS_STORE
 
