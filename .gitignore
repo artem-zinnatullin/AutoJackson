@@ -15,8 +15,8 @@ bin/
 gen/
 out/
 target/
-auto-jackson-example/src/main/generated/
-auto-jackson-example/generated_src/
+**/generated/
+**/generated_src/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -28,8 +28,8 @@ local.properties
 # Idea IDE files
 *.idea/
 *.iml
-AutoJackson.ipr
-AutoJackson.iws
+*.ipr
+*.iws
 
 *.DS_STORE
 
