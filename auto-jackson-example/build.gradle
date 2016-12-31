@@ -1,3 +1,6 @@
+plugins {
+  id 'org.inferred.processors' version '1.2.4'
+}
 apply plugin: 'java'
 
 test {
@@ -8,8 +11,8 @@ test {
 
 // See build.gradle in the root directory
 dependencies {
+  processor libraries.autoValue
   compile libraries.intellijAnnotations
-  compile libraries.autoValue
   compile libraries.jackson
 
   testCompile libraries.junit
