@@ -12,7 +12,6 @@ test {
 // See build.gradle in the root directory
 dependencies {
   processor libraries.autoValue
-  compile libraries.intellijAnnotations
   compile libraries.jackson
   compile libraries.findbugs
 

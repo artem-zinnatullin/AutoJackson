@@ -39,7 +39,6 @@ public abstract class Tweet {
     @JsonProperty("content")
     public abstract Builder content(@Nonnull String content);
 
-    @Nullable
     public abstract Builder blocked(@Nonnull Boolean blocked);
 
     public abstract Boolean blocked();
