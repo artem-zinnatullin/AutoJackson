@@ -1,6 +1,5 @@
 package com.artemzin.autojackson;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.google.auto.value.AutoValue;
@@ -11,9 +10,8 @@ import javax.annotation.Nullable;
 @JsonDeserialize(builder = AutoValue_Tweet.Builder.class)
 public abstract class Tweet {
 
-  @JsonCreator
   public static Builder builder() {
-    return new AutoValue_Tweet.Builder().blocked(false);
+    return new AutoValue_Tweet.Builder();
   }
 
   @JsonProperty("author")
