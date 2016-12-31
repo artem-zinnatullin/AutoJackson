@@ -20,8 +20,8 @@ public abstract class Tweet {
   @JsonProperty("content")
   public abstract String content();
 
-  @JsonProperty("blocked")
   @Nullable
+  @JsonProperty("blocked")
   public abstract Boolean blocked();
 
   @AutoValue.Builder
@@ -33,12 +33,12 @@ public abstract class Tweet {
     @JsonProperty("content")
     public abstract Builder content(String content);
 
-    @JsonProperty("blocked")
     @Nullable
+    @JsonProperty("blocked")
     public abstract Builder blocked(Boolean blocked);
 
-    @JsonProperty("blocked")
     @Nullable
+    @JsonProperty("blocked")
     public abstract Boolean blocked();
 
     public abstract Tweet autoBuild();
