@@ -14,6 +14,7 @@ dependencies {
   processor libraries.autoValue
   compile libraries.intellijAnnotations
   compile libraries.jackson
+  compile libraries.findbugs
 
   testCompile libraries.junit
   testCompile libraries.assertJ
