@@ -1,12 +1,12 @@
 # AutoJackson
 
-###Why AutoValue is awesome?
+### Why AutoValue is awesome?
 Just read [Google's explanation!](https://github.com/google/auto/tree/master/value)
 
 TLTR: It gives you immutability (thread safety!), `equals()`, `hashCode()` and `toString()` for free!
 
 ------
-###Okay, I'm in, show me the code!
+### Okay, I'm in, show me the code!
 
 Simple example of class annotated with [AutoValue](https://github.com/google/auto/tree/master/value) or [AutoParcel](https://github.com/frankiesardo/auto-parcel) + [Jackson](https://github.com/FasterXML/jackson).
 
