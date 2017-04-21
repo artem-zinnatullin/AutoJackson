@@ -3,36 +3,51 @@ package com.artemzin.autojackson;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.google.auto.value.AutoValue;
-import org.jetbrains.annotations.NotNull;
+
+import javax.annotation.Nullable;
 
 @AutoValue
 @JsonDeserialize(builder = AutoValue_Tweet.Builder.class)
 public abstract class Tweet {
 
-  @NotNull
   public static Builder builder() {
     return new AutoValue_Tweet.Builder();
   }
 
-  @NotNull
   @JsonProperty("author")
   public abstract String author();
 
-  @NotNull
   @JsonProperty("content")
   public abstract String content();
 
+  @Nullable
+  @JsonProperty("blocked")
+  public abstract Boolean blocked();
+
   @AutoValue.Builder
   public static abstract class Builder {
-    @NotNull
+
     @JsonProperty("author")
-    public abstract Builder author(@NotNull String author);
+    public abstract Builder author(String author);
 
-    @NotNull
     @JsonProperty("content")
-    public abstract Builder content(@NotNull String content);
+    public abstract Builder content(String content);
 
-    @NotNull
-    public abstract Tweet build();
+    @Nullable
+    @JsonProperty("blocked")
+    public abstract Builder blocked(Boolean blocked);
+
+    @Nullable
+    @JsonProperty("blocked")
+    public abstract Boolean blocked();
+
+    public abstract Tweet autoBuild();
+
+    public Tweet build() {
+      if (blocked() == null) {
+        blocked(false);
+      }
+      return autoBuild();
+    }
   }
 }
