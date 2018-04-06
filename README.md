@@ -16,6 +16,7 @@ It is **serializable** to JSON and **deserializable** from JSON, it's immutable 
 // Just use @AutoParcel annotations if you need AutoParcel
 
 @AutoValue
+@JsonSerizalize(as = Tweet.class)
 @JsonDeserialize(builder = Tweet.Builder.class)
 public abstract class Tweet {
 
