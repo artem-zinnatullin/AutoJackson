@@ -22,7 +22,7 @@ public abstract class Tweet {
 
   @NotNull
   public static Builder builder() {
-    return Builder().builder();
+    return Builder.builder();
   }
 
   @NotNull
